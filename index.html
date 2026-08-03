@@ -3,26 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modelo AR - AQ425</title>
-  <script type="module"
-  src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
-  </script>
+  <title>Modelo AR</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
   <style>
-    body { margin:0; font-family:sans-serif; }
-    model-viewer { width:100vw; height:100vh; background:#eee; }
+    body { margin:0; }
+    model-viewer { width:100vw; height:100vh; }
   </style>
 </head>
 <body>
   <model-viewer
-    src="Astronaut.glb"
-    alt="Modelo 3D del proyecto"
+    src="astronauta.glb"
+    alt="Modelo 3D"
     ar
-    ar-modes="webxr scene-viewer quick-look"
+    ar-modes="scene-viewer webxr quick-look"
     camera-controls
-    auto-rotate
-    ar-placement="floor" 
-    orientation="0deg -90deg 0deg"
-    shadow-intensity="1">
+    auto-rotate>
   </model-viewer>
 </body>
 </html>
