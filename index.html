@@ -11,15 +11,6 @@
   </style>
 </head>
   <div id="diag" style="position:fixed;top:0;left:0;right:0;background:#000;color:#0f0;font:14px monospace;padding:8px;z-index:9999;"></div>
-<script>
-  const mv = document.querySelector('model-viewer');
-  const d = document.getElementById('diag');
-  function log(t){ d.innerHTML += t + '<br>'; }
-  log('canActivateAR: ' + mv.canActivateAR);
-  mv.addEventListener('load', () => log('modelo cargado OK'));
-  mv.addEventListener('error', e => log('ERROR: ' + JSON.stringify(e.detail)));
-  setTimeout(()=> log('canActivateAR (2s): ' + mv.canActivateAR), 2000);
-</script>
 <body>
   <model-viewer
     src="Astronaut.glb"
